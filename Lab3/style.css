@@ -1,0 +1,179 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* 1. Font chữ  */
+
+@font-face {
+    font-family: "Poppins"; /* Tên tùy chỉnh cho font */
+    src: url("./Poppins/Poppins-Medium.ttf") format("ttf"); /* Đường dẫn tới font */
+    font-weight: bold; /* Có thể là 'normal', 'bold' hoặc giá trị cụ thể như 400, 700 */
+    font-style: normal; /* Có thể là 'normal', 'italic', 'oblique', v.v. */
+}
+
+@font-face {
+    font-family: "Merriweather"; /* Tên tùy chỉnh cho font */
+    src: url("./Merriweather/Merriweather-Regular.ttf") format("ttf"); /* Đường dẫn tới font */
+    font-weight: normal; /* Có thể là 'normal', 'bold' hoặc giá trị cụ thể như 400, 700 */
+    font-style: normal; /* Có thể là 'normal', 'italic', 'oblique', v.v. */
+}
+
+/* 2. Định dạng văn bản */
+html {
+    font-family: "Poppins", serif;
+    font-size: 10px; /* Đặt kích thước phông chữ cho trang là 10px. */
+}
+
+h1,
+h2 {
+    font-family: "Merriweather", sans-serif;
+    letter-spacing: 2px; /* Khoảng cách giữa các ký tự trong tiêu đề */
+}
+
+h1 {
+    font-size: 5rem; /* (sensible relative unit). */
+    text-align: center; /* Căn giữa tiêu đề h1 */
+}
+
+h2 {
+    font-size: 3rem; /* (sensible relative unit). */
+}
+
+p,
+li {
+    font-size: 1.6rem; /* (sensible relative unit). */
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    line-height: 1.5; /* Đặt line-height cho văn bản trong phần body */
+}
+
+section h2 + p {
+    text-indent: 20px; /* Thụt đầu dòng cho đoạn văn bản ngay sau tiêu đề h2 */
+}
+/* 2252156 - Trần Quốc Trung */
+
+/* 3. Link */
+/* Xóa các mặc định focus outline của tất cả các liên kết trong trang. */
+a {
+    outline: none;
+}
+
+/* Đặt màu sắc cho các trạng thái của liên kết */
+a:link,
+a:visited {
+    color: #a66;
+}
+
+/* Khi hover hoặc focus thì đường gạch chân sẽ mất. */
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+/* Tạo cho liên kết trạng thái active một kiểu dáng khác biệt để nó nổi bật */
+a:active {
+    color: #e93535;
+    text-shadow: 1px 1px 1px #333;
+}
+
+/* Thêm các biểu tượng external-link bên cạnh ngay sau các liên kết nội dung ra web ngoài */
+a[href*="http"] {
+    background: url("external-link-52.png") no-repeat right center;
+    padding-right: 20px;
+    background-size: 16px 16px;
+}
+
+
+/* 4. List - danh sách */
+ul,
+ol {
+    margin: 1.6rem 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-latin;
+}
+
+/* 5. Thanh điều hướng menu */
+
+/* Xóa bỏ dấu đầu dòng */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+nav li a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.4rem;
+    border: 1px solid #a66;
+}
+
+nav li a:hover,
+nav li a:focus {
+    background-color: #a66;
+    color: #fff;
+}
+
+nav li a:active {
+    color: white;
+    background-color: #ed7b7b;
+}
+/* 2252156 - Trần Quốc Trung */
+
